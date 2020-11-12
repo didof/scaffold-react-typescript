@@ -13,7 +13,7 @@ module.exports = {
 		path: path.resolve(rootPath, 'dist'),
 	},
 	resolve: {
-		extensions: ['.js', '.jsx'],
+		extensions: ['.js', '.jsx', '.ts', '.tsx'],
 	},
 	module: {
 		rules: [rule__css(), rule__module_css(), rule__file(), rule__js()],
@@ -108,5 +108,13 @@ function rule__hbs() {
 	return {
 		test: /\.hbs$/i,
 		loader: 'handlebars-loader',
+	};
+}
+
+function rule__ts() {
+	return {
+		test: /\.tsx?$/i,
+		use: 'ts-loader',
+		exclude: /node_modules/,
 	};
 }
