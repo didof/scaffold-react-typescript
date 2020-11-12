@@ -4,6 +4,6 @@ This is my personal scaffold that I use as a starting point in the construction 
 
 # Brances
 * master (base)
- * webpack
- * react
- * typescript (to implement)
+   * webpack
+   * react
+   * typescript (to implement)
