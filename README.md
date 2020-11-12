@@ -4,11 +4,11 @@ This is my personal scaffold that I use as a starting point in the construction 
 
 ## Usage
 Webpack is already configured. I have made available two commanders:
-* `npm run dev` - starts a development server
-* `npm run build` - builds the project and places the output in a dist folder
+* `npm run dev` - starts with concurrently both the tsc (in watch mode) and the development server.
+* `npm run build` - first compiles TypeScript files, then uses the output to build the project and places the output in a dist folder.
 
 ## Brances
 * master (base)
    * webpack
    * react
-   * typescript (to implement)
+   * typescript
