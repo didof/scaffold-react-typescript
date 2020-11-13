@@ -1,4 +1,4 @@
-var Patterns;
+export var Patterns;
 (function (Patterns) {
     // structural
     Patterns[Patterns["Adapter"] = 0] = "Adapter";
@@ -26,19 +26,3 @@ var Patterns;
     Patterns[Patterns["Prototype"] = 20] = "Prototype";
     Patterns["Singleton"] = "Singleton";
 })(Patterns || (Patterns = {}));
-export var abilitedPatterns = [Patterns.Singleton];
-function initSingleton() {
-    console.log("initializing \"" + Patterns.Singleton + "\" pattern.");
-}
-export default function setupPatterns(patterns) {
-    console.log("initializing patterns: [" + patterns + "]");
-    patterns.forEach(function (p) {
-        switch (p) {
-            case Patterns.Singleton:
-                initSingleton();
-                break;
-            default:
-                throw Error("The pattern " + p + " is not recognized.");
-        }
-    });
-}

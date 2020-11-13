@@ -1,4 +1,4 @@
-declare enum Patterns {
+export declare enum Patterns {
     Adapter = 0,
     Bridge = 1,
     Composite = 2,
@@ -22,6 +22,3 @@ declare enum Patterns {
     Prototype = 20,
     Singleton = "Singleton"
 }
-export declare const abilitedPatterns: Patterns[];
-export default function setupPatterns(patterns: Patterns[]): void;
-export {};
